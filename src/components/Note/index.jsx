@@ -1,10 +1,13 @@
 import { Container } from "./styles"
 import { Tag } from "../Tag"
+import { Star } from "../Star"
 
 export function Note({ data, ...rest }) {
   return (
     <Container {...rest}>
       <h1>{data.title}</h1>
+      <Star />
+      <p>{data.description}</p>
       {data.tags && (
         <footer>
           {data.tags.map((tag) => (

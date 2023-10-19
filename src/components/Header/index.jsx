@@ -1,5 +1,6 @@
-import { RiShutDownLine } from "react-icons/ri";
-import { Container, Profile, Logout } from "./styles";
+import { Container, Profile, Search, Brand } from "./styles"
+import { FiSearch } from "react-icons/fi"
+import { Input } from "../Input"
 
 export function Header() {
   return (
@@ -7,15 +8,18 @@ export function Header() {
       <Profile to="/profile">
         <img src="https://github.com/loren175.png" alt="Foto do usuario" />
         <div>
-          <span>Bem-vindo,</span>
           <strong>Rafa</strong>
+          <span>sair</span>
         </div>
       </Profile>
 
-    <Logout>
-      <RiShutDownLine />
-    </Logout>
+      <Search>
+        <Input placeholder="Pesquisar pelo titulo" icon={FiSearch} />
+      </Search>
 
+      <Brand>
+        <h1>RocketMovies</h1>
+      </Brand>
     </Container>
   )
 }

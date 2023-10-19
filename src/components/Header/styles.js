@@ -11,7 +11,7 @@ export const Container = styled.header`
   border-bottom-color: ${({ theme }) => theme.COLORS.BACKGROUND_700};
 
   display: flex;
-  justify-content: space-between;
+  flex-direction: row-reverse;
   padding: 0 80px;
 `
 
@@ -41,13 +41,16 @@ export const Profile = styled(Link)`
     }
   }
 `
-
-export const Logout = styled.button`
-  border: none;
-  background: none;
-
-  > svg {
-    color: ${({ theme }) => theme.COLORS.GRAY_100};
-    font-size: 32px;
-  }
+export const Search = styled.div` 
+  display: flex;
+  align-items: center;
+  padding: 60px;
+  width: 100%;
 `
+
+export const Brand = styled.div`
+  display: flex;
+  align-items: center;
+  color: ${({ theme }) => theme.COLORS.ORANGE};
+`
+

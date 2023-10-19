@@ -15,17 +15,13 @@ export function New() {
       <main>
         <Form>
           <header>
-            <h1>Criar Nota</h1>
+            <h1>Novo Filme</h1>
             <Link to="/">Voltar</Link>
           </header>
 
           <Input placeholder="Titulo" />
+          <Input placeholder="Sua Nota (de 0 a 5)" />
           <TextArea placeholder="Observações" />
-
-          <Section title="Links Úteis">
-            <NoteItem value="https://google.com" />
-            <NoteItem isNew placeholder="Novo Link" />
-          </Section>
 
           <Section title="Marcadores">
             <div className="tags">

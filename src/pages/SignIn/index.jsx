@@ -8,32 +8,20 @@ export function SignIn() {
   return (
     <Container>
       <Form>
-        <h1>Rocket Notes</h1>
-        <p>Aplicação para salvar e gerenciar seus links úteis.</p>
+        <h1>RocketMovies</h1>
+        <p>Aplicação para acompanhar tudo que assistir.</p>
         <h2>Faça seu Login</h2>
 
-        <Input 
-        placeholder="E-mail"
-        type="text"
-        icon={FiMail}
-        />
+        <Input placeholder="E-mail" type="text" icon={FiMail} />
 
-        <Input 
-        placeholder="Senha"
-        type="password"
-        icon={FiLock}
-        />
+        <Input placeholder="Senha" type="password" icon={FiLock} />
 
-      <Button title="Entrar"/>
-        
-    <Link to="/register">
-      Criar conta
-    </Link>
+        <Button title="Entrar" />
 
+        <Link to="/register">Criar conta</Link>
       </Form>
 
       <Background />
     </Container>
-
   )
 }

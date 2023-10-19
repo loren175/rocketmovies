@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from "styled-components"
 
 export const Container = styled.button`
   width: 100%;
@@ -14,6 +14,14 @@ export const Container = styled.button`
     font-weight: 700;
     font-size: 24px;
     color: ${({ theme }) => theme.COLORS.WHITE};
+  }
+
+  > p {
+    flex: 1;
+    text-align: left;
+    font-weight: 400;
+    font-size: 19px;
+    color: ${({ theme }) => theme.COLORS.GRAY_100};
   }
 
   > footer {
